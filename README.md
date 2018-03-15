@@ -5,6 +5,8 @@
 - Bill of materials: List o spring boot dependencies in a certain version that work with the used spring boot version;
 
 ## Annotations
+- @RestController: Define a class as a rest entrypoint;
+- @RequestMapping: Define an endpoint;
 - @Service: Spring creates a singleton from the class;
 - @Autowired: Spring knows it should inject a dependency;
 - @Entity: Tells Spring JPA that the class should be mapped to database
