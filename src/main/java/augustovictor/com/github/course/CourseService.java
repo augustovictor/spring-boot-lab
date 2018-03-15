@@ -1,5 +1,6 @@
 package augustovictor.com.github.course;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,12 +14,26 @@ public class CourseService {
 	private CourseRepository courseRepository;
 	
 	public List<Course> getCourses() {
-		return Arrays.asList(
-              new Course(1, "Course 1", "Desc course 1")
-          );
+		List<Course> courses = new ArrayList<>();
+		this.courseRepository
+				.findAll()
+				.forEach(courses::add);
+		return courses;
 	}
 	
 	public Course getCourse(Integer id) {
 		return this.courseRepository.findOne(id);
+	}
+
+	public void addCourse(Course course) {
+		this.courseRepository.save(course);
+	}
+
+	public void updateCourse(Integer id, Course course) {
+		this.courseRepository.save(course);
+	}
+
+	public void delete(Integer id) {
+		this.courseRepository.delete(id);
 	}
 }
