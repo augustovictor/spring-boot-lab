@@ -7,6 +7,7 @@
 ## Annotations
 - @Service: Spring creates a singleton from the class;
 - @Autowired: Spring knows it should inject a dependency;
+- @Entity: Tells Spring JPA that the class should be mapped to database
 
 ## Initializing a new application
 - Spring Initializr: Web UI where we set some options and download the application;
@@ -21,7 +22,19 @@ In order to change some of the defaults of spring configuration we have to chang
 
 #### Steps
 - First create a new `application.properties` file in the resources folder;
+- Add @Entity annotation to classes;
+- Add @Id to an attribute;
+- Create a Repository class extending from CrudRepository<Topic, String>;
 
 
 Configs we may want to change:
 - Server port (default is 8080)
+
+### Data persistence
+
+#### Java Persistence API (JPA)
+
+A specification on how to do configure Object Relational Mapping (ORM);
+
+#### Spring Data JPA
+
