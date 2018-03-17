@@ -13,10 +13,10 @@ public class CourseService {
 	@Autowired
 	private CourseRepository courseRepository;
 	
-	public List<Course> getCourses() {
+	public List<Course> getCourses(String topicId) {
 		List<Course> courses = new ArrayList<>();
 		this.courseRepository
-				.findAll()
+				.findByTopicId(topicId)
 				.forEach(courses::add);
 		return courses;
 	}
@@ -29,11 +29,15 @@ public class CourseService {
 		this.courseRepository.save(course);
 	}
 
-	public void updateCourse(Integer id, Course course) {
+	public void updateCourse(String topicId, Integer id, Course course) {
 		this.courseRepository.save(course);
 	}
 
-	public void delete(Integer id) {
+	public void delete(String topicId, Integer id) {
 		this.courseRepository.delete(id);
+	}
+
+	public List<Course> getCoursesByTitle(String title) {
+		return this.courseRepository.findByTitle(title);
 	}
 }
