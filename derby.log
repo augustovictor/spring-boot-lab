@@ -1,8 +1,8 @@
 ----------------------------------------------------------------
-Sat Mar 17 00:04:46 BRT 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0162-31ea-ae85-00001093f918 
-on database directory memory:/Users/victoraweb/workspace-sts/course-api/testdb with class loader org.springframework.boot.loader.LaunchedURLClassLoader@eed1f14 
-Loaded from jar:file:/Users/victoraweb/workspace-sts/course-api/target/course-api-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/derby-10.12.1.1.jar!/
+Sat Mar 17 00:25:54 BRT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0162-31fe-07be-0000078aa870 
+on database directory memory:/Users/victoraweb/workspace-sts/course-api/testdb with class loader sun.misc.Launcher$AppClassLoader@6f94fa3e 
+Loaded from file:/Users/victoraweb/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_162-b12
 user.dir=/Users/victoraweb/workspace-sts/course-api

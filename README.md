@@ -41,6 +41,16 @@ A specification on how to do configure Object Relational Mapping (ORM);
 #### Spring Data JPA
 
 #### Monitoring and Deploying
+
+Monitoring (with Actuator):
+An Actuator is a bunch o binaries we add to our class
+- We can change the port our health check is running;
+	- `/health`
+	- We can set the `port` of the health check by adding `management.port` to the `application.properties` 
+- Other endpoints provided by `Actuator` can be found [here](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready)
+
+
+Deploying:
 - Generate a JAR file. This can be ran anywhere with a JVM;
 - `mvn clean install`
 	- 'clean' is to clear `target` release first;
@@ -50,4 +60,5 @@ A specification on how to do configure Object Relational Mapping (ORM);
 ---
 
 If we're using TOMCAT:
-- add/change the attribute `packaging` in `pom.xml` from `jar` to `war`  
+- add/change the attribute `packaging` in `pom.xml` from `jar` to `war`
+- `java -jar target/<generated_jar-_file>` to run init; 
