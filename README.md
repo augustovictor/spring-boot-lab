@@ -40,3 +40,14 @@ A specification on how to do configure Object Relational Mapping (ORM);
 
 #### Spring Data JPA
 
+#### Monitoring and Deploying
+- Generate a JAR file. This can be ran anywhere with a JVM;
+- `mvn clean install`
+	- 'clean' is to clear `target` release first;
+- `java -jar target/<generated_jar-_file>` to run init;
+- Distribute this JAR file;
+
+---
+
+If we're using TOMCAT:
+- add/change the attribute `packaging` in `pom.xml` from `jar` to `war`  
